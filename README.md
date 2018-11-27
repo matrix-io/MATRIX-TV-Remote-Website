@@ -47,12 +47,15 @@ Run the shell script inside `tv_commands` to record buttons from your TV remote.
 **Begin pressing the prompted buttons on your TV remote**. The commands created are made to best match an average remote.
 
 ```
-~/tv_remote/tv_commands/recordCommands.sh
+cd ~/tv_remote/tv_commands
+chmod +x ./recordCommands.sh
+./recordCommands
 ```
 
 ## 5. Launch TV Remote Website
 Run this project
 ```shell
+cd ~/tv_remote
 node ~/tv_remote/app.js
 ```
 
