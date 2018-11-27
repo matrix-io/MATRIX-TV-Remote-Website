@@ -1,0 +1,1 @@
+python ir_remote.py -r -g16 -f codes.json number_1 number_2 number_3 number_4 number_5 number_6 number_7 number_8 number_9 number_0 channel_up channel_down volume_up volume_down mute power input last enter guide exit ok up down left right
