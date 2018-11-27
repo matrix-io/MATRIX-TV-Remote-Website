@@ -35,7 +35,7 @@ $(window).load(function() {
 	$( "#button-volume-up" ).on( "click", function(){remoteCommand("volume_up");});
 	$( "#button-volume-down" ).on( "click", function(){remoteCommand("volume_down");});
 	// Movement Keys
-	$( "#button-ok" ).on( "click", function(){remoteCommand("ok");});
+	$( "#button-ok" ).on( "click", function(){remoteCommand("enter");});
 	$( "#button-up" ).on( "click", function(){remoteCommand("up");});
 	$( "#button-down" ).on( "click", function(){remoteCommand("down");});
 	$( "#button-left" ).on( "click", function(){remoteCommand("left");});
