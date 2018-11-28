@@ -63,7 +63,7 @@ Go into a web browser and enter the followig URL:
 
 `YOUR_RASPBERRY_PI_IP:8080`
 
-# Final Notes
+# Additonal Notes
 ## Starting On Boot
 Add the following commands to `etc/rc.local`, for your Pi to start with the TV remote website running.'
 > make sure the commands below are **inserted above `exit 0`** in `rc.local`
@@ -73,3 +73,22 @@ sudo pigpiod
 # Start TV remote website
 /home/pi/.nvm/versions/node/v8.6.0/bin/node /home/pi/tv_remote/app.js &
 ```
+
+## Adding Custom TV Commands
+In order to add custom commands, the command must be inside `tv_remote/tv_commands/codes.json`
+
+A new command can be created by using:
+```shell
+# Command
+python ~/tv_remote/tv_commands/ir_remote.py -r -g16 -f codes.json PUT_COMMAND_NAME_WITH_NO_SPACES_HERE
+
+# Example
+python ~/tv_remote/tv_commands/ir_remote.py -r -g16 -f codes.json volume_up
+```
+
+With your new command set, the [TV remote website files](https://github.com/matrix-io/MATRIX-TV-Remote-Website/tree/master/public) can be edited to change or add your command. Some knowledge of HTML and Javascript will be required.
+
+
+## 
+
+
