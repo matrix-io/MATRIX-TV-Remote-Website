@@ -48,7 +48,6 @@ io.on('connection', function(socket){
       // Create command
       console.log(button + " was pressed")
       var command = "python " + __dirname+"/tv_commands/ir_remote.py -p -g13 -f " + __dirname+"/tv_commands/codes.json " + button;
-      console.log(command);
       // Execute command
       exec(command, function(error, stdout, stderr) {});
     });
