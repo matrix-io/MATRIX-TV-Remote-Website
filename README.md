@@ -49,7 +49,7 @@ Run the shell script inside `tv_commands` to record buttons from your TV remote.
 ```
 cd ~/tv_remote/tv_commands
 chmod +x ./recordCommands.sh
-./recordCommands
+./recordCommands.sh
 ```
 
 ## 5. Launch TV Remote Website
