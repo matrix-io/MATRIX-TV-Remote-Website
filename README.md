@@ -13,7 +13,9 @@ The following steps from
  
  - Step 2: [Installing pigpio](https://github.com/matrix-io/matrix-creator-ir-test#2-installing-pigpio)
 
- Before continuing, pigpio must be running to allow IR functionality.
+ Before continuing, pigpio must be running to allow IR functionality. 
+ 
+ > **Must be done each time Pi boots**
 ```
 sudo pigpiod
 ```
@@ -87,8 +89,3 @@ python ~/tv_remote/tv_commands/ir_remote.py -r -g16 -f codes.json volume_up
 ```
 
 With your new command set, the [TV remote website files](https://github.com/matrix-io/MATRIX-TV-Remote-Website/tree/master/public) can be edited to change or add your command. Some knowledge of HTML and Javascript will be required.
-
-
-## 
-
-
