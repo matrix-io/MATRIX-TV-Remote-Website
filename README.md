@@ -64,3 +64,11 @@ Go into a web browser and enter the followig URL:
 `YOUR_RASPBERRY_PI_IP:8080`
 
 # Final Notes
+## Starting On Boot
+Add the following commands to `etc/rc.local`, in order to have your Pi boot witht the TV remote website running.
+```
+# Start pigpio
+sudo pigpiod
+# Start TV remote website
+/home/pi/.nvm/versions/node/v8.6.0/bin/node /home/pi/tv_remote/app.js &
+```
