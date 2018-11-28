@@ -67,6 +67,11 @@ Go into a web browser and enter the followig URL:
 
 # Additonal Notes
 ## Starting On Boot
+Install the python pigpio package to root
+```
+sudo pip install pigpio
+```
+
 Add the following commands to `etc/rc.local`, for your Pi to start with the TV remote website running.'
 > make sure the commands below are **inserted above `exit 0`** in `rc.local`
 ```
