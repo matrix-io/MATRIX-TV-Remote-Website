@@ -47,7 +47,8 @@ io.on('connection', function(socket){
     socket.on('remoteCommand', function(button){
       // Create command
       console.log(button + " was pressed")
-      var command = "python " + __dirname+"/tv_commands/ir_remote.py -p -g13 -f " + __dirname+"/tv_commands/codes.json " + button;
+      var pythonPath = "/usr/bin/python";
+      var command = pythonPath + __dirname+"/tv_commands/ir_remote.py -p -g13 -f " + __dirname+"/tv_commands/codes.json " + button;
       // Execute command
       exec(command, function(error, stdout, stderr) {});
     });
