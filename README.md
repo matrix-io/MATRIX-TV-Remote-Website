@@ -1,6 +1,8 @@
 # Overview
 Use your Raspberry Pi & MATRIX Creator to setup a website to control your TV.
 
+<img width=250 src="https://raw.githubusercontent.com/matrix-io/MATRIX-TV-Remote-Website/master/website_demo.png?raw=true"/>
+
 # Setup
 All setup steps will be done on your Raspberry Pi.
 ## 1. Install IR Dependencies
